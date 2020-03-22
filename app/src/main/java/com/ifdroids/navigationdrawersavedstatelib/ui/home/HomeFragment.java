@@ -29,7 +29,7 @@ public class HomeFragment extends BaseFragmentSaveView {
 
         // we can now do whatever our fragment needs to do
         final LinearLayout containerLayout = root.findViewById(R.id.container);
-        final TextView textbox = root.findViewById(R.id.text_home);
+        final EditText textbox = root.findViewById(R.id.text_home);
         Button b = root.findViewById(R.id.button_home);
 
         b.setOnClickListener(new View.OnClickListener() {
