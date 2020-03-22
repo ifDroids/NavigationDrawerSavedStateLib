@@ -2,6 +2,6 @@ package com.ifdroids.navigationdrawersavedstatelib.libs.BaseFragmentSaveView.int
 
 import android.view.View;
 
-public interface OnFragmentViewLoadNow {
+public interface OnFragmentViewLoadListener {
     View onFragmentViewLoadNow();
 }

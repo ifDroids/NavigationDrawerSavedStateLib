@@ -12,13 +12,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 
 import com.ifdroids.navigationdrawersavedstatelib.R;
-import com.ifdroids.navigationdrawersavedstatelib.libs.BaseFragmentSaveView.BaseFragmentSaveView;
+import com.ifdroids.navigationdrawersavedstatelib.libs.BaseFragmentSaveView.wrappers.BaseFragmentSaveView;
 import com.ifdroids.navigationdrawersavedstatelib.TestLayout;
 
+// connect our library by extending our custom fragment wrapper
 public class HomeFragment extends BaseFragmentSaveView {
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         // Since the fragment extends BaseFragmentSaveView, the onCreateView() will send
         // the layout ID to our library.
         setLayoutID(R.layout.fragment_home);
