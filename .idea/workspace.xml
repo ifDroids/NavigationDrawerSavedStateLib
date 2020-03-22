@@ -6,14 +6,17 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="019c2ade-454d-41e0-b597-b9d673c84d3e" name="Default Changelist" comment="" />
+    <list default="true" id="019c2ade-454d-41e0-b597-b9d673c84d3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_XL_API_26" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="cacc054c" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -125,7 +128,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="39897e8b-387d-4e02-9343-9be1d352b2a2" name="Default Changelist" comment="" />
+      <changelist id="019c2ade-454d-41e0-b597-b9d673c84d3e" name="Default Changelist" comment="" />
       <created>1584800330101</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
