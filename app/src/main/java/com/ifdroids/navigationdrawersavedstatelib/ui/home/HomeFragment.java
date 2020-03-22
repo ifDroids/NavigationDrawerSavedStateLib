@@ -20,15 +20,7 @@ import com.ifdroids.navigationdrawersavedstatelib.TestLayout;
 public class HomeFragment extends BaseFragmentSaveView {
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        // Since the fragment extends BaseFragmentSaveView, the onCreateView() will send
-        // the layout ID to our library.
-        setLayoutID(R.layout.fragment_home);
-
-        // Firstly calls the BaseFragmentSaveView onCreateView
-        final View root = super.onCreateView(inflater,container,savedInstanceState);
-        // TIP: Removing that, the IDE pops a warning about null root view.This warning is never true since our library already takes care about that
-        if (root == null) throw new NullPointerException("Could not find fragment layout.Did you call setLayoutID() before super.onCreateView() at your fragment?");
+        final View root = onCreateSavedView(inflater,container,savedInstanceState,R.layout.fragment_home);
 
         // we can now do whatever our fragment needs to do
         final LinearLayout containerLayout = root.findViewById(R.id.container);

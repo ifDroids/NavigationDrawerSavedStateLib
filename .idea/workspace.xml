@@ -7,8 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="019c2ade-454d-41e0-b597-b9d673c84d3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ifdroids/navigationdrawersavedstatelib/libs/BaseFragmentSaveView/wrappers/BaseFragmentSaveView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ifdroids/navigationdrawersavedstatelib/libs/BaseFragmentSaveView/wrappers/BaseFragmentSaveView.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
