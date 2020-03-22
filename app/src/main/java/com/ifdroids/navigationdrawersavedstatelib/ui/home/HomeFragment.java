@@ -26,6 +26,8 @@ public class HomeFragment extends BaseFragmentSaveView {
 
         // Firstly calls the BaseFragmentSaveView onCreateView
         final View root = super.onCreateView(inflater,container,savedInstanceState);
+        // TIP: Removing that, the IDE pops a warning about null root view.This warning is never true since our library already takes care about that
+        if (root == null) throw new NullPointerException("Could not find fragment layout.Did you call setLayoutID() before super.onCreateView() at your fragment?");
 
         // we can now do whatever our fragment needs to do
         final LinearLayout containerLayout = root.findViewById(R.id.container);
