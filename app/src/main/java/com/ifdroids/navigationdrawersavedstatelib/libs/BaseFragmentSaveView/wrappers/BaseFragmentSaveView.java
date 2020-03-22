@@ -32,8 +32,11 @@ public class BaseFragmentSaveView extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View v = viewLoaderListener.onFragmentViewLoadNow();
+        View stockLayout = inflater.inflate(currentLayoutID, container, false);
 
-        return v == null ? inflater.inflate(currentLayoutID, container, false) : v ;
+        if (stockLayout == null) throw new NullPointerException("Could not find fragment layout.Did you call setLayoutID() before super.onCreateView() at your fragment?");
+
+        return v == null ? stockLayout : v ;
     }
 
     protected void setLayoutID(@LayoutRes int id){
