@@ -10,6 +10,7 @@ import com.ifdroids.navigationdrawersavedstatelib.libs.BaseFragmentSaveView.inte
 
 @SuppressLint("Registered") // This activity is just a wrapper. No need to be registered to Manifest
 public class BaseActivityFragmentLoader extends AppCompatActivity implements OnFragmentViewLoadNow, OnFragmentViewSaveNow {
+
     private View fragmentLayout;
 
     @Override

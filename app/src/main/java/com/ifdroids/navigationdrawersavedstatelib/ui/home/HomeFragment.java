@@ -36,7 +36,7 @@ public class HomeFragment extends BaseFragmentSaveView {
             @Override
             public void onClick(View v) {
                 // append some test layouts
-                TestLayout command = new TestLayout(baseActivity);
+                TestLayout command = new TestLayout(getActivity());
                 TextView tv = command.findViewById(R.id.test_title);
                 tv.setText( tv.getText().toString()  + textbox.getText().toString());
 
@@ -44,7 +44,8 @@ public class HomeFragment extends BaseFragmentSaveView {
                 containerLayout.addView(command);
 
                 //save the state of the layout
-                dataPasser.onFragmentViewSaveNow(root);
+                saveCurrentViewState(root);
+
             }
         });
         return root;

@@ -1,6 +1,5 @@
 package com.ifdroids.navigationdrawersavedstatelib.libs.BaseFragmentSaveView;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,26 +16,20 @@ import com.ifdroids.navigationdrawersavedstatelib.libs.BaseFragmentSaveView.inte
 
 public class BaseFragmentSaveView extends Fragment {
 
-    protected OnFragmentViewSaveNow dataPasser;
-    protected Activity baseActivity;
-
     private OnFragmentViewLoadNow loader;
-    private View savedView;
     private int currentLayoutID;
-
+    private OnFragmentViewSaveNow viewParser;
 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        dataPasser = (OnFragmentViewSaveNow) context;
+        viewParser = (OnFragmentViewSaveNow) context;
         loader = (OnFragmentViewLoadNow) context;
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
-        baseActivity = getActivity();
 
         View v = loader.onFragmentViewLoadNow();
 
@@ -48,7 +41,7 @@ public class BaseFragmentSaveView extends Fragment {
     }
 
     protected void saveCurrentViewState(View v){
-        dataPasser.onFragmentViewSaveNow(v);
+        viewParser.onFragmentViewSaveNow(v);
     }
 
 }
